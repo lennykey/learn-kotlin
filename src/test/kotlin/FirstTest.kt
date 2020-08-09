@@ -6,17 +6,17 @@ class FirstTest {
     @Test
     fun first() {
         val stringRage = "A".."Y"
-        //println("B" in stringRage)
+        // println("B" in stringRage)
 
-        //println(stringRage.toString())
-        //println(stringRage.endInclusive)
+        // println(stringRage.toString())
+        // println(stringRage.endInclusive)
 
         val intRange = 1..7
-        //println(8 in intRange)
-        //intRange.forEach { println(it) }
+        // println(8 in intRange)
+        // intRange.forEach { println(it) }
 
         val charRange = 'a'..'x'
-        //charRange.forEach{ println(it)}
+        // charRange.forEach{ println(it)}
 
         val r = 5..1
         r.forEach { println(it) }
@@ -24,7 +24,7 @@ class FirstTest {
         val backwardIntRange = 5.downTo(2)
         backwardIntRange.forEach { println(it) }
 
-        for(item in 'A'..'F'){
+        for (item in 'A'..'F') {
             println(item)
             println(item::class)
         }
@@ -33,14 +33,13 @@ class FirstTest {
         val reversedRange = range.reversed()
         reversedRange.forEach { println(it) }
 
-
         val goodBy = "goodBy"
         val sRange = 0..goodBy.length
         println(sRange)
     }
 
     @Test
-    fun ifExpression(){
+    fun ifExpression() {
         val x = if (true) 5 else "five"
 
         assertTrue(x is Int)

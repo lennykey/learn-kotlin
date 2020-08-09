@@ -1,6 +1,5 @@
 package sealedclasses.paymentorigin
 
-
 import sealedclasses.RuleProvider
 import sealedclasses.ceditcard.CreditCardNumberProvider
 import kotlin.reflect.KProperty

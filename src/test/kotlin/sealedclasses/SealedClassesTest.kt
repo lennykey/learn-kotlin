@@ -71,5 +71,4 @@ internal class SealedClassesTest {
             assertEquals("Visa-12345", paymentOrigin)
         }
     }
-
 }

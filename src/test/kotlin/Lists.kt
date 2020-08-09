@@ -10,7 +10,6 @@ class Lists {
         // The usage of immutable list passed to a Java Class is mutable
         val strings = listOf("John", "Joe", "Jane") // class java.util.Arrays$ArrayList
         Assertions.assertEquals("class java.util.Arrays\$ArrayList", strings.javaClass.toString())
-
     }
 
     @Test
@@ -46,7 +45,7 @@ class Lists {
     }
 
     @Test
-    fun createAndConvertAnArray(){
+    fun createAndConvertAnArray() {
         val array = arrayOf("Hello", "World")
 
         // Creating a list using asList()
@@ -61,5 +60,4 @@ class Lists {
         val arrayListThree = listOf(*array)
         Assertions.assertEquals(listOf("Hello", "World"), arrayListThree)
     }
-
 }
