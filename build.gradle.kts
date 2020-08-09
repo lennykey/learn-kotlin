@@ -33,7 +33,7 @@ val ktlintCheck by tasks.creating(JavaExec::class) {
     description = "Check Kotlin code style."
     classpath = ktlint
     main = "com.pinterest.ktlint.Main"
-    args = listOf("src/**/*.kt")
+    args = listOf("src/**/*.kt", "**/*.kts")
 }
 
 val ktlintFormat by tasks.creating(JavaExec::class) {
@@ -43,6 +43,5 @@ val ktlintFormat by tasks.creating(JavaExec::class) {
     description = "Fix Kotlin code style deviations."
     classpath = ktlint
     main = "com.pinterest.ktlint.Main"
-    args = listOf("-F", "src/**/*.kt")
+    args = listOf("-F", "src/**/*.kt", "**/*.kts")
 }
-
