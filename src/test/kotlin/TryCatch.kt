@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 class TryCatch {
+
     @Test
     fun shouldReturnValueFromTheTryBlock() {
         val tryCatchValue = convertFromStringToInt("5")
@@ -38,5 +39,4 @@ class TryCatch {
             // the finally block does not return any value and is not involved in the evaluation
         }
     }
-
 }
