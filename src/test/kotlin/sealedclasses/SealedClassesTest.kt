@@ -38,7 +38,7 @@ internal class SealedClassesTest {
 
         @Test
         fun `paymentOrigin standard`() {
-            val paymentOrigin: String by PaymentOriginNumberProvider(origin = "standard", creditCardProvider = "standard")
+            val paymentOrigin: String by PaymentOriginNumberProvider(origin = "standard")
 
             assertEquals("standardOrigin", paymentOrigin)
         }
